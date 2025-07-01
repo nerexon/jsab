@@ -14,6 +14,7 @@ class Application {
 
     addHtmlDocument(document: HtmlDocument){
         this.htmlDocuments.push(document);
+        return this;
     }
 
     build(outputDir: string = 'dist'){
