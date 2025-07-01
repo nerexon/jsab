@@ -8,4 +8,4 @@ const aboutPage = new HtmlDocument('About');
 app.addHtmlDocument(homePage);
 app.addHtmlDocument(aboutPage);
 
-app.build('./out');
+app.build('test/out');
