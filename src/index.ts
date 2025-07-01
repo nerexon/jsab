@@ -1,3 +1,5 @@
+import { BaseDocument } from "./document/baseDocument";
+
 class Application {
     name: string
 
@@ -10,4 +12,4 @@ class Application {
     }
 }
 
-export {Application};
+export { Application, BaseDocument };
