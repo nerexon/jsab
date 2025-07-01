@@ -1,0 +1,11 @@
+{
+  "name": "jsab",
+  "version": "0.0.0",
+  "description": "Create HTML and CSS using javascript",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alataq",
+  "license": "ISC"
+}
