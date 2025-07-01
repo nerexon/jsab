@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { BaseDocument } from "./document/baseDocument";
-import { HtmlDocument } from "./document/HtmlDocument";
+import { HtmlDocument } from "./document/htmlDocument";
 
 class Application {
     name: string

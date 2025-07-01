@@ -38,8 +38,8 @@ const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 const baseDocument_1 = require("./document/baseDocument");
 Object.defineProperty(exports, "BaseDocument", { enumerable: true, get: function () { return baseDocument_1.BaseDocument; } });
-const HtmlDocument_1 = require("./document/HtmlDocument");
-Object.defineProperty(exports, "HtmlDocument", { enumerable: true, get: function () { return HtmlDocument_1.HtmlDocument; } });
+const htmlDocument_1 = require("./document/htmlDocument");
+Object.defineProperty(exports, "HtmlDocument", { enumerable: true, get: function () { return htmlDocument_1.HtmlDocument; } });
 class Application {
     name;
     htmlDocuments;
@@ -49,6 +49,7 @@ class Application {
     }
     addHtmlDocument(document) {
         this.htmlDocuments.push(document);
+        return this;
     }
     build(outputDir = 'dist') {
         if (!fs.existsSync(outputDir)) {
