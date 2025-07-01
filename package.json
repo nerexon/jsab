@@ -7,12 +7,13 @@
     "build"
   ],
   "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
   "author": "Alataq",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^24.0.8",
     "typescript": "^5.8.3"
   }
 }
