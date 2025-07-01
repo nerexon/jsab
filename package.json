@@ -4,8 +4,12 @@
   "description": "Create HTML and CSS using javascript",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "author": "Alataq",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
 }
