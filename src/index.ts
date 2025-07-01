@@ -15,4 +15,4 @@ class Application {
     }
 }
 
-export { Application, BaseDocument };
+export { Application, BaseDocument, HtmlDocument };
