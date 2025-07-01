@@ -1,11 +1,12 @@
 import { Application, HtmlDocument } from '../src/index';
 
-const app = new Application('MyWebsite');
+const homePage = new HtmlDocument('Home')
+    .setTitle("JSAB - Home");
+const aboutPage = new HtmlDocument('About')
+    .setTitle("JSAB - About");
 
-const homePage = new HtmlDocument('Home');
-const aboutPage = new HtmlDocument('About');
-
-app.addHtmlDocument(homePage);
-app.addHtmlDocument(aboutPage);
+const app = new Application('MyWebsite')
+    .addHtmlDocument(homePage)
+    .addHtmlDocument(aboutPage);
 
 app.build('test/out');
