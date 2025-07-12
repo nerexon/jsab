@@ -1,4 +1,3 @@
-
 import { BaseElement } from "./baseElement";
 import { ElementType } from "./elementType";
 
