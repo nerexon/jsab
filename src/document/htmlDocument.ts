@@ -1,4 +1,5 @@
 import { BaseDocument } from "./baseDocument";
+import { BaseElement } from "../element/baseElement"
 
 export class HtmlDocument extends BaseDocument {
     public title: string;
@@ -11,6 +12,10 @@ export class HtmlDocument extends BaseDocument {
     setTitle(title: string){
         this.title = title;
         return this;
+    }
+
+    addElement(element: BaseElement){
+
     }
 
     build(): string {
