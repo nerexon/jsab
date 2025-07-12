@@ -1,16 +1,10 @@
 import { BaseElement } from "./baseElement";
+import { BaseContainerElement } from "./baseContainerElement";
 import { ElementType } from "./elementType";
 
-export class BodyElement extends BaseElement {
-    public children: BaseElement[] = [];
-
+export class BodyElement extends BaseContainerElement {
     constructor(){
         super(ElementType.body);
-    }
-
-    addElement(element: BaseElement){
-        this.children.push(element);
-        return this;
     }
 
     build(): string {
