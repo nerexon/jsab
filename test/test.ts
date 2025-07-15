@@ -27,7 +27,7 @@ aboutPage.body
         new FooterElement
     )
 
-const app = new Application('MyWebsite')
+const app = new Application('JSAB Test Website')
     .addHtmlDocument(homePage)
     .addHtmlDocument(aboutPage);
 
