@@ -4,13 +4,13 @@
 - [ ] link
 - [ ] meta
 - [ ] style
-- [ ] title
+- [x] title
 - [x] body
 - [ ] address
 - [ ] article
 - [ ] aside
-- [ ] footer
-- [ ] header
+- [x] footer
+- [x] header
 - [ ] h1
 - [ ] h2
 - [ ] h3
@@ -18,7 +18,7 @@
 - [ ] h5
 - [ ] h6
 - [ ] hgroup
-- [ ] main
+- [x] main
 - [ ] nav
 - [ ] section
 - [ ] blockquote
