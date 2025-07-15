@@ -7,6 +7,6 @@ export class FooterElement extends BaseContainerElement {
     }
 
     build() {
-        return `<footer>${this.childrens.map(child => (child as any).build()).join("\n")}</footer>`;
+        return `<footer>${this.childrens.map(child => (child as any).build()).join("\n")}\n</footer>`;
     }
 }
