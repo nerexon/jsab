@@ -7,6 +7,6 @@ export class HeaderElement extends BaseContainerElement {
     }
 
     build(){
-        return `<header>${this.childrens.map(child => (child as any).build()).join("\n")}`;
+        return `<header>${this.childrens.map(child => (child as any).build()).join("\n")}</header>`;
     }
 }
