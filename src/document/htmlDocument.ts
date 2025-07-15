@@ -7,11 +7,13 @@ import { TitleElement } from "../element/titleElement";
 export class HtmlDocument extends BaseDocument {
     public head: HeadElement;
     public body: BodyElement;
+    private elements: BaseElement[];
 
     constructor(name: string) {
         super(name);
-        this.head = new HeadElement();
-        this.body = new BodyElement();
+        this.head = new HeadElement;
+        this.body = new BodyElement;
+        this.elements = new Array;
     }
 
     setTitle(title: string){
@@ -23,7 +25,7 @@ export class HtmlDocument extends BaseDocument {
     }
 
     addElement(element: BaseElement){
-        this.body.addElement(element);
+        this.elements.push(element)
         return this;
     }
 
@@ -32,6 +34,7 @@ export class HtmlDocument extends BaseDocument {
 <html>
 ${this.head.build()}
 ${this.body.build()}
+${this.elements.map(element => (element as any).build()).join("\n")}
 </html>`;
     }
 }
