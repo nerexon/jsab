@@ -1,13 +1,13 @@
 import { BaseDocument } from "./baseDocument";
-import { BaseElement } from "../element/baseHtmlElement";
-import { HeadElement } from "../element/headElement";
-import { BodyElement } from "../element/bodyElement";
+import { BaseHtmlElement } from "../element/baseHtmlElement";
+import { HeadElement } from "../element/container/headElement";
+import { BodyElement } from "../element/container/bodyElement";
 import { TitleElement } from "../element/titleElement";
 
 export class HtmlDocument extends BaseDocument {
     public head: HeadElement;
     public body: BodyElement;
-    private elements: BaseElement[];
+    private elements: BaseHtmlElement[];
 
     constructor(name: string) {
         super(name);
@@ -24,7 +24,7 @@ export class HtmlDocument extends BaseDocument {
         return this;
     }
 
-    addElement(element: BaseElement){
+    addElement(element: BaseHtmlElement){
         this.elements.push(element)
         return this;
     }

@@ -1,5 +1,5 @@
-import { BaseContainerElement } from "./baseContainerElement";
-import { ElementType } from "./elementType";
+import { BaseContainerElement } from "../baseContainerElement";
+import { ElementType } from "../elementType";
 
 export class FooterElement extends BaseContainerElement {
     constructor() {
