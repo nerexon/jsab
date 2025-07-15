@@ -1,20 +1,20 @@
-import { BaseElement } from "./baseElement";
+import { BaseHtmlElement } from "./baseHtmlElement";
 import { ElementType } from "./elementType";
 
-export abstract class BaseContainerElement extends BaseElement {
-    protected childrens: BaseElement[];
+export abstract class BaseContainerElement extends BaseHtmlElement {
+    protected childrens: BaseHtmlElement[];
 
     constructor(type: ElementType){
         super(type);
         this.childrens = new Array;
     }
 
-    addElement(element: BaseElement): this{
+    addElement(element: BaseHtmlElement): this{
         this.childrens.push(element);
         return this;
     }
 
-    getElements(): ReadonlyArray<BaseElement> {
+    getElements(): ReadonlyArray<BaseHtmlElement> {
         return this.childrens;
     }
 }

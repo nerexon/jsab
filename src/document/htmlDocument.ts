@@ -1,5 +1,5 @@
 import { BaseDocument } from "./baseDocument";
-import { BaseElement } from "../element/baseElement";
+import { BaseElement } from "../element/baseHtmlElement";
 import { HeadElement } from "../element/headElement";
 import { BodyElement } from "../element/bodyElement";
 import { TitleElement } from "../element/titleElement";

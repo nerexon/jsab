@@ -1,4 +1,3 @@
-import { BaseElement } from "./baseElement";
 import { BaseContainerElement } from "./baseContainerElement";
 import { ElementType } from "./elementType";
 

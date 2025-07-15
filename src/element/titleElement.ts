@@ -1,7 +1,7 @@
-import { BaseElement } from "./baseElement";
+import { BaseHtmlElement } from "./baseHtmlElement";
 import { ElementType } from "./elementType";
 
-export class TitleElement extends BaseElement {
+export class TitleElement extends BaseHtmlElement {
     public title: string;
 
     constructor() {

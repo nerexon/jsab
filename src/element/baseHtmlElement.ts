@@ -1,6 +1,6 @@
 import { ElementType } from "./elementType";
 
-export class BaseElement {
+export class BaseHtmlElement {
     public type: ElementType
 
     constructor(type: ElementType){
