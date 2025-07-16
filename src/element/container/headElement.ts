@@ -7,6 +7,6 @@ export class HeadElement extends BaseContainerElement {
     }
 
     build(): string {
-        return `<head>\n${this.childrens.map(child => (child as any).build()).join('\n')}\n</head>`;
+        return `<head>\n${this.children.map(child => (child as any).build()).join('\n')}\n</head>`;
     }
 }

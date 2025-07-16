@@ -7,6 +7,6 @@ export class BodyElement extends BaseContainerElement {
     }
 
     build(): string {
-        return `<body>\n${this.childrens.map(child => (child as any).build()).join('\n')}\n</body>`;
+        return `<body>\n${this.children.map(child => (child as any).build()).join('\n')}\n</body>`;
     }
 }
