@@ -1,23 +1,19 @@
-import { Application } from "./application";
-import { BaseDocument } from "./document/baseDocument";
-import { HtmlDocument } from "./document/htmlDocument";
-import { HeaderElement } from "./element/container/headerElement";
-import { MainElement } from "./element/container/mainElement";
-import { FooterElement } from "./element/container/footerElement";
-import { BaseTextElement } from "./element/baseTextElement";
-import { BaseTextFormattingElement } from "./element/baseTextFormattingElement";
-import { H1Element } from "./element/text/h1Element";
-import { PElement } from "./element/text/pElement";
+// Core
+export { Application } from "./application";
 
-export {
-  Application,
-  BaseDocument,
-  HtmlDocument,
-  HeaderElement,
-  MainElement,
-  FooterElement,
-  BaseTextElement,
-  BaseTextFormattingElement,
-  H1Element,
-  PElement
-};
+// Documents
+export { BaseDocument } from "./document/baseDocument";
+export { HtmlDocument } from "./document/htmlDocument";
+
+// Container Elements
+export { HeaderElement } from "./element/container/headerElement";
+export { MainElement } from "./element/container/mainElement";
+export { FooterElement } from "./element/container/footerElement";
+
+// Base Elements
+export { BaseTextElement } from "./element/baseTextElement";
+export { BaseTextFormattingElement } from "./element/baseTextFormattingElement";
+
+// Text Elements
+export { H1Element } from "./element/text/h1Element";
+export { PElement } from "./element/text/pElement";
