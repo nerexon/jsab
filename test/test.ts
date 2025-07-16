@@ -1,4 +1,4 @@
-import { Application, FooterElement, HeaderElement, HtmlDocument, MainElement } from '../src/index';
+import { Application, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement } from '../src/index';
 
 const homePage = new HtmlDocument('Home')
     .setTitle("JSAB - Home");
@@ -7,7 +7,11 @@ const aboutPage = new HtmlDocument('About')
 
 homePage.body
     .addElement(
-        new HeaderElement
+        new HeaderElement()
+        .addElement(
+            new H1Element()
+            .addElement("Welcome to JSAB - Javascript Application Builder")
+        )
     )
     .addElement(
         new MainElement
@@ -18,7 +22,11 @@ homePage.body
 
 aboutPage.body
     .addElement(
-        new HeaderElement
+        new HeaderElement()
+        .addElement(
+            new H1Element()
+            .addElement("About the JSAB Project")
+        )
     )
     .addElement(
         new MainElement
