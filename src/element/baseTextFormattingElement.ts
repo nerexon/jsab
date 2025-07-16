@@ -11,6 +11,7 @@ export abstract class BaseTextFormattingElement extends BaseHtmlElement {
 
     public addElement(child: BaseTextFormattingElement | string) {
         this.children.push(child);
+        return this
     }
 
     public abstract build(): string;
