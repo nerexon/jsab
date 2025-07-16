@@ -11,7 +11,7 @@
 - [ ] aside
 - [x] footer
 - [x] header
-- [ ] h1
+- [x] h1
 - [ ] h2
 - [ ] h3
 - [ ] h4
@@ -31,7 +31,7 @@
 - [ ] hr
 - [ ] li
 - [ ] ol
-- [ ] p
+- [x] p
 - [ ] pre
 - [ ] ul
 - [ ] a
