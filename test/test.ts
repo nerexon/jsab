@@ -1,4 +1,4 @@
-import { Application, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement } from '../src/index';
+import { Application, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement, PElement } from '../src/index';
 
 const homePage = new HtmlDocument('Home')
     .setTitle("JSAB - Home");
@@ -14,11 +14,20 @@ homePage.body
         )
     )
     .addElement(
-        new MainElement
+        new MainElement()
+            .addElement(
+                new PElement()
+                .addText("This is a paragraph on the home page, demonstrating the use of PElement.")
+                .addText("It supports multiple text children and other formatting elements.")
+            )
+            .addElement(
+                new PElement()
+                .addText("You can add more content and structure here using other elements.")
+            )
     )
     .addElement(
-        new FooterElement
-    )
+        new FooterElement()
+    );
 
 aboutPage.body
     .addElement(
@@ -29,11 +38,19 @@ aboutPage.body
         )
     )
     .addElement(
-        new MainElement
+        new MainElement()
+            .addElement(
+                new PElement()
+                .addText("This project aims to simplify the process of building web applications with JavaScript.")
+            )
+            .addElement(
+                new PElement()
+                .addText("More details about its features and development will be available soon.")
+            )
     )
     .addElement(
-        new FooterElement
-    )
+        new FooterElement()
+    );
 
 const app = new Application('JSAB Test Website')
     .addHtmlDocument(homePage)
