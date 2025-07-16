@@ -7,6 +7,7 @@ import { FooterElement } from "./element/container/footerElement";
 import { BaseTextElement } from "./element/baseTextElement";
 import { BaseTextFormattingElement } from "./element/baseTextFormattingElement";
 import { H1Element } from "./element/text/h1Element";
+import { PElement } from "./element/text/pElement";
 
 export {
   Application,
@@ -17,5 +18,6 @@ export {
   FooterElement,
   BaseTextElement,
   BaseTextFormattingElement,
-  H1Element
+  H1Element,
+  PElement
 };
