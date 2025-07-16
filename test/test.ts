@@ -10,7 +10,7 @@ homePage.body
         new HeaderElement()
         .addElement(
             new H1Element()
-            .addElement("Welcome to JSAB - Javascript Application Builder")
+            .addText("Welcome to JSAB - Javascript Application Builder")
         )
     )
     .addElement(
@@ -25,7 +25,7 @@ aboutPage.body
         new HeaderElement()
         .addElement(
             new H1Element()
-            .addElement("About the JSAB Project")
+            .addText("About the JSAB Project")
         )
     )
     .addElement(

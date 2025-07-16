@@ -9,7 +9,7 @@ export abstract class BaseTextFormattingElement extends BaseHtmlElement {
         this.children = [];
     }
 
-    public addElement(child: BaseTextFormattingElement | string) {
+    public addText(child: BaseTextFormattingElement | string) {
         this.children.push(child);
         return this
     }
