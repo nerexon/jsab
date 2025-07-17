@@ -1,6 +1,6 @@
 {
   "name": "jsab",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create HTML and CSS using javascript",
   "main": "build/index.js",
   "files": [
