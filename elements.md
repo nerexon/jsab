@@ -23,7 +23,7 @@
 - [ ] section
 - [ ] blockquote
 - [ ] dd
-- [ ] div
+- [x] div
 - [ ] dl
 - [ ] dt
 - [ ] figcaption

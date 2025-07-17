@@ -9,6 +9,7 @@ export { HtmlDocument } from "./document/htmlDocument";
 export { HeaderElement } from "./element/container/headerElement";
 export { MainElement } from "./element/container/mainElement";
 export { FooterElement } from "./element/container/footerElement";
+export { DivElement } from "./element/container/divElement"
 
 // Base Elements
 export { BaseTextElement } from "./element/baseTextElement";
