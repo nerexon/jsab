@@ -1,4 +1,4 @@
-import { Application, DivElement, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement, PElement } from '../src/index';
+import { Application, DivElement, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement, PElement, AElement, HrefAttribute } from '../src/index';
 import { IdAttribute } from '../src/element/attribute/idAttribute';
 
 const homePage = new HtmlDocument('Home')
@@ -57,6 +57,13 @@ homePage.body
                             new IdAttribute().setId("home-p-3")
                         )
                         .addText("Here is another paragraph to make the div element more noticeable.")
+                    )
+                    .addElement(
+                        new AElement()
+                        .addAttribute(
+                            new HrefAttribute().setHref("about.html")
+                        )
+                        .addText("Go to About Page")
                     )
             )
     )
@@ -117,6 +124,13 @@ aboutPage.body
                             new IdAttribute().setId("about-p-3")
                         )
                         .addText("This additional paragraph on the about page helps to illustrate the containerization by the div element.")
+                    )
+                    .addElement(
+                        new AElement()
+                        .addAttribute(
+                            new HrefAttribute().setHref("home.html")
+                        )
+                        .addText("Go to Home Page")
                     )
             )
     )
