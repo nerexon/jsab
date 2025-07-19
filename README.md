@@ -108,6 +108,14 @@ Text elements are used to add and format text content.
     new PElement().addText("This is a paragraph of text.")
     ```
 
+*   **`AElement`:** Represents a hyperlink.
+
+    ```typescript
+    new AElement()
+        .addText("Visit Google")
+        .addHref("https://www.google.com");
+    ```
+
 ### Other Elements
 
 *   **`TitleElement`:** Represents the title of the HTML document. It is set via the `setTitle` method on the `HtmlDocument` instance.
@@ -115,6 +123,29 @@ Text elements are used to add and format text content.
     ```typescript
     const homePage = new HtmlDocument('Home')
         .setTitle("My Website - Home");
+    ```
+
+## Attributes
+
+Elements can have attributes that provide additional information. Here are the currently supported attributes:
+
+*   **`IdAttribute`:** Represents the `id` attribute, which specifies a unique ID for an HTML element.
+
+    ```typescript
+    import { IdAttribute } from "jsab";
+
+    new DivElement()
+        .addAttribute(new IdAttribute().setId("myUniqueDiv"));
+    ```
+
+*   **`HrefAttribute`:** Represents the `href` attribute, which specifies the URL of the page the link goes to. This is typically used with `AElement`.
+
+    ```typescript
+    import { AElement, HrefAttribute } from "jsab";
+
+    new AElement()
+        .addText("Go to Example")
+        .addAttribute(new HrefAttribute().setHref("https://www.example.com"));
     ```
 
 ## License
