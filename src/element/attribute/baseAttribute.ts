@@ -15,5 +15,7 @@ export abstract class BaseAttribute {
         return this._value;
     }
 
-    public abstract build(): string;
+    public  build(): string {
+        return `${this.name}="${this.value}"`;
+    }
 }
