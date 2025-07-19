@@ -7,6 +7,6 @@ export class DivElement extends BaseContainerElement {
     }
 
     build(){
-        return `<div>${this.children.map(child => (child as any).build()).join("\n")}\n</div>`;
+        return `<div${this.buildAttributes()}>${this.children.map(child => (child as any).build()).join("\n")}\n</div>`;
     }
 }

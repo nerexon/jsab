@@ -8,6 +8,6 @@ export class H1Element extends BaseTextElement {
     }
 
     build(){
-        return `<h1>${this.children.map(child => typeof child === "string" ? (child as string) : (child as BaseTextFormattingElement).build()).join(" ")}</h1>`;
+        return `<h1${this.buildAttributes()}>${this.children.map(child => typeof child === "string" ? (child as string) : (child as BaseTextFormattingElement).build()).join(" ")}</h1>`;
     }
 }

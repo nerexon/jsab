@@ -6,7 +6,8 @@ export class IdAttribute extends BaseAttribute {
     }
 
     public setId(id: string){
-        this.setValue(id)
+        this.setValue(id);
+        return this;
     }
 
     public get id(): string{

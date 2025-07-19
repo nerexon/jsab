@@ -8,6 +8,6 @@ export class PElement extends BaseTextElement {
     }
 
     build(){
-        return `<p>${this.children.map(child => typeof child === "string" ? (child as string) : (child as BaseTextFormattingElement).build()).join(" ")}</p>`;
+        return `<p${this.buildAttributes()}>${this.children.map(child => typeof child === "string" ? (child as string) : (child as BaseTextFormattingElement).build()).join(" ")}</p>`;
     }
 }
