@@ -15,6 +15,11 @@ export { DivElement } from "./element/container/divElement"
 export { BaseTextElement } from "./element/baseTextElement";
 export { BaseTextFormattingElement } from "./element/baseTextFormattingElement";
 
+// Attributes
+export { IdAttribute } from "./element/attribute/idAttribute";
+export { HrefAttribute } from "./element/attribute/hrefAttribute";
+
 // Text Elements
 export { H1Element } from "./element/text/h1Element";
 export { PElement } from "./element/text/pElement";
+export { AElement } from "./element/text/aElement";
