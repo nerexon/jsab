@@ -138,9 +138,9 @@ aboutPage.body
                     )
                     .addElement(
                         new PElement()
-                        .addText("This is a paragraph with ")
-                        .addText(new BElement().addText("bold text with ").addText(new IElement().addText("italic text")))
-                        .addText(" inside.")
+                        .addText("This is a paragraph with")
+                        .addText(new BElement().addText("bold text with").addText(new IElement().addText("italic text")))
+                        .addText("inside.")
                     )
                     .addElement(
                         new AElement()
