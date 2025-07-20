@@ -34,7 +34,7 @@
 - [x] p
 - [ ] pre
 - [ ] ul
-- [ ] a
+- [x] a
 - [ ] abbr
 - [ ] b
 - [ ] bdi
