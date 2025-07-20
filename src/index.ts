@@ -31,5 +31,6 @@ export { IdAttribute } from "./element/attribute/idAttribute";
 // Text Elements
 export { AElement } from "./element/text/aElement";
 export { BElement } from "./element/text/bElement";
+export { IElement } from "./element/text/iElement";
 export { H1Element } from "./element/text/h1Element";
 export { PElement } from "./element/text/pElement";

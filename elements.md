@@ -46,7 +46,7 @@
 - [ ] del
 - [ ] dfn
 - [ ] em
-- [ ] i
+- [x] i
 - [ ] ins
 - [ ] kbd
 - [ ] mark

@@ -122,6 +122,12 @@ Text elements are used to add and format text content.
     new BElement().addText("This text will be bold.")
     ```
 
+*   **`IElement`:** Represents a section of text to be rendered in italic.
+
+    ```typescript
+    new IElement().addText("This text will be italic.")
+    ```
+
 ### Other Elements
 
 *   **`TitleElement`:** Represents the title of the HTML document. It is set via the `setTitle` method on the `HtmlDocument` instance.

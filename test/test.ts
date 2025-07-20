@@ -1,4 +1,4 @@
-import { Application, DivElement, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement, PElement, AElement, HrefAttribute, BElement } from '../src/index';
+import { Application, DivElement, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement, PElement, AElement, HrefAttribute, BElement, IElement } from '../src/index';
 import { IdAttribute } from '../src/element/attribute/idAttribute';
 
 const homePage = new HtmlDocument('Home')
@@ -65,6 +65,8 @@ homePage.body
                         )
                         .addText("This paragraph contains a")
                         .addText(new BElement().addText("bold text"))
+                        .addText("and an")
+                        .addText(new IElement().addText("italic text"))
                         .addText("to show how text formatting elements can be nested.")
                     )
                     .addElement(
@@ -133,6 +135,12 @@ aboutPage.body
                             new IdAttribute().setId("about-p-3")
                         )
                         .addText("This additional paragraph on the about page helps to illustrate the containerization by the div element.")
+                    )
+                    .addElement(
+                        new PElement()
+                        .addText("This is a paragraph with ")
+                        .addText(new BElement().addText("bold text with ").addText(new IElement().addText("italic text")))
+                        .addText(" inside.")
                     )
                     .addElement(
                         new AElement()
