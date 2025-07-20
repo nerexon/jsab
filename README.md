@@ -113,7 +113,13 @@ Text elements are used to add and format text content.
     ```typescript
     new AElement()
         .addText("Visit Google")
-        .addHref("https://www.google.com");
+        .addAttribute(new HrefAttribute().setHref("https://www.google.com"));
+    ```
+
+*   **`BElement`:** Represents a section of text to be rendered in bold.
+
+    ```typescript
+    new BElement().addText("This text will be bold.")
     ```
 
 ### Other Elements
