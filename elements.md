@@ -36,7 +36,7 @@
 - [ ] ul
 - [x] a
 - [ ] abbr
-- [ ] b
+- [x] b
 - [ ] bdi
 - [ ] bdo
 - [ ] br

@@ -1,4 +1,4 @@
-import { Application, DivElement, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement, PElement, AElement, HrefAttribute } from '../src/index';
+import { Application, DivElement, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement, PElement, AElement, HrefAttribute, BElement } from '../src/index';
 import { IdAttribute } from '../src/element/attribute/idAttribute';
 
 const homePage = new HtmlDocument('Home')
@@ -57,6 +57,15 @@ homePage.body
                             new IdAttribute().setId("home-p-3")
                         )
                         .addText("Here is another paragraph to make the div element more noticeable.")
+                    )
+                    .addElement(
+                        new PElement()
+                        .addAttribute(
+                            new IdAttribute().setId("home-p-4")
+                        )
+                        .addText("This paragraph contains a")
+                        .addText(new BElement().addText("bold text"))
+                        .addText("to show how text formatting elements can be nested.")
                     )
                     .addElement(
                         new AElement()
