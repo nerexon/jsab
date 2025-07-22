@@ -1,4 +1,4 @@
-import { Application, DivElement, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement, PElement, AElement, HrefAttribute, BElement, IElement, IdAttribute } from '../src/index';
+import { Application, DivElement, FooterElement, H1Element, HeaderElement, HtmlDocument, MainElement, PElement, AElement, HrefAttribute, BElement, IElement, IdAttribute, ClassAttribute } from '../src/index';
 
 const homePage = new HtmlDocument('Home')
     .setTitle("JSAB - Home");
@@ -11,10 +11,16 @@ homePage.body
             .addAttribute(
                 new IdAttribute().setId("home-header")
             )
+            .addAttribute(
+                new ClassAttribute().addClass("text-center")
+            )
             .addElement(
                 new H1Element()
                     .addAttribute(
                         new IdAttribute().setId("home-h1")
+                    )
+                    .addAttribute(
+                        new ClassAttribute().addClasses("text-4xl", "font-bold")
                     )
                     .addText("Welcome to JSAB - Javascript Application Builder")
             )
@@ -24,10 +30,16 @@ homePage.body
             .addAttribute(
                 new IdAttribute().setId("home-main")
             )
+            .addAttribute(
+                new ClassAttribute().addClass("container")
+            )
             .addElement(
                 new DivElement()
                     .addAttribute(
                         new IdAttribute().setId("home-div-1")
+                    )
+                    .addAttribute(
+                        new ClassAttribute().addClasses("p-4", "m-4", "border")
                     )
                     .addElement(
                         new PElement()
@@ -42,6 +54,9 @@ homePage.body
                 new DivElement()
                     .addAttribute(
                         new IdAttribute().setId("home-div-2")
+                    )
+                    .addAttribute(
+                        new ClassAttribute().addClasses("p-4", "m-4", "border")
                     )
                     .addElement(
                         new PElement()
@@ -73,6 +88,9 @@ homePage.body
                             .addAttribute(
                                 new HrefAttribute().setHref("about.html")
                             )
+                            .addAttribute(
+                                new ClassAttribute().addClass("text-blue-500")
+                            )
                             .addText("Go to About Page")
                     )
             )
@@ -82,6 +100,9 @@ homePage.body
             .addAttribute(
                 new IdAttribute().setId("home-footer")
             )
+            .addAttribute(
+                new ClassAttribute().addClass("text-center")
+            )
     );
 
 aboutPage.body
@@ -90,10 +111,16 @@ aboutPage.body
             .addAttribute(
                 new IdAttribute().setId("about-header")
             )
+            .addAttribute(
+                new ClassAttribute().addClass("text-center")
+            )
             .addElement(
                 new H1Element()
                     .addAttribute(
                         new IdAttribute().setId("about-h1")
+                    )
+                    .addAttribute(
+                        new ClassAttribute().addClasses("text-4xl", "font-bold")
                     )
                     .addText("About the JSAB Project")
             )
@@ -103,10 +130,16 @@ aboutPage.body
             .addAttribute(
                 new IdAttribute().setId("about-main")
             )
+            .addAttribute(
+                new ClassAttribute().addClass("container")
+            )
             .addElement(
                 new DivElement()
                     .addAttribute(
                         new IdAttribute().setId("about-div-1")
+                    )
+                    .addAttribute(
+                        new ClassAttribute().addClasses("p-4", "m-4", "border")
                     )
                     .addElement(
                         new PElement()
@@ -120,6 +153,9 @@ aboutPage.body
                 new DivElement()
                     .addAttribute(
                         new IdAttribute().setId("about-div-2")
+                    )
+                    .addAttribute(
+                        new ClassAttribute().addClasses("p-4", "m-4", "border")
                     )
                     .addElement(
                         new PElement()
@@ -146,12 +182,18 @@ aboutPage.body
                             .addAttribute(
                                 new HrefAttribute().setHref("home.html")
                             )
+                            .addAttribute(
+                                new ClassAttribute().addClass("text-blue-500")
+                            )
                             .addText("Go to Home Page")
                     )
             )
     )
     .addElement(
         new FooterElement()
+            .addAttribute(
+                new ClassAttribute().addClass("text-center")
+            )
     );
 
 const app = new Application('JSAB Test Website')
