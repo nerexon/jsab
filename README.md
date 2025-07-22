@@ -160,6 +160,15 @@ Elements can have attributes that provide additional information. Here are the c
         .addAttribute(new HrefAttribute().setHref("https://www.example.com"));
     ```
 
+*   **`ClassAttribute`:** Represents the `class` attribute, which specifies one or more class names for an element.
+
+    ```typescript
+    import { ClassAttribute } from "jsab";
+
+    new DivElement()
+        .addAttribute(new ClassAttribute().addClass("my-class"));
+    ```
+
 ## License
 
 This project is licensed under the ISC License. See the [LICENSE.md](LICENSE.md) file for more details.
