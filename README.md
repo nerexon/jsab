@@ -17,7 +17,7 @@ To use JSAB, you first need to create an `Application` instance. Then, you can c
 Here is a simple example of how to create a website with two pages:
 
 ```typescript
-import { Application, H1Element, HtmlDocument, PElement } from './src/index';
+import { Application, H1Element, HtmlDocument, PElement } from 'jsab';
 
 const homePage = new HtmlDocument('Home')
     .setTitle("Hello World - Home");
