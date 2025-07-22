@@ -27,6 +27,7 @@ export { BaseTextFormattingElement } from "./element/baseTextFormattingElement";
 export { BaseAttribute } from "./element/attribute/baseAttribute";
 export { HrefAttribute } from "./element/attribute/hrefAttribute";
 export { IdAttribute } from "./element/attribute/idAttribute";
+export { ClassAttribute } from "./element/attribute/classAttribute";
 
 // Text Elements
 export { AElement } from "./element/text/aElement";
