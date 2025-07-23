@@ -12,11 +12,11 @@
 - [x] footer
 - [x] header
 - [x] h1
-- [ ] h2
-- [ ] h3
-- [ ] h4
-- [ ] h5
-- [ ] h6
+- [x] h2
+- [x] h3
+- [x] h4
+- [x] h5
+- [x] h6
 - [ ] hgroup
 - [x] main
 - [ ] nav
