@@ -97,6 +97,7 @@ Container elements are used to group other elements together and create the layo
 Text elements are used to add and format text content.
 
 *   **`H1Element`:** Represents a level 1 heading.
+Heading from level 1 to level 6 are supported.
 
     ```typescript
     new H1Element().addText("This is a top-level heading")
