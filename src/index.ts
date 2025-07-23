@@ -37,4 +37,5 @@ export { H1Element } from "./element/text/h1Element";
 export { H2Element } from "./element/text/h2Element";
 export { H3Element } from "./element/text/h3Element";
 export { H4Element } from "./element/text/h4Element";
+export { H5Element } from "./element/text/h5Element";
 export { PElement } from "./element/text/pElement";
